@@ -25,9 +25,9 @@ Preprocess raw data from space and earth weather, to produce a cleaned and merge
 
 Running this script:
 ```
-src/data/data_acquisition.ipynb
+aurora_data_pipeline.ipynb
 ```
-produces the processed dataset: `data/processed/data_aurora.csv`
+produces the processed dataset: `aurora_dataset_clean.csv`
 
 <!-- ## Next Steps
 
