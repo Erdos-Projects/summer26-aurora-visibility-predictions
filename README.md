@@ -13,7 +13,7 @@ This project builds a classification model to predict whether auroras will be vi
 
 The goal is to provide a short-term forecast for observers, helping photographers, astronomers, and aurora enthusiasts plan observations.
 
-$\textcolor{blue}{\text{The end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present".}}$
+The end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present"
 
 ## Data
 Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](https://github.com/Erdos-Projects/summer26-aurora-visibility-predictions/blob/main/aurora_data_pipeline.ipynb) 
@@ -45,3 +45,5 @@ produces the processed dataset: `aurora_dataset_clean.csv`
 - Stronger models: random forest, gradient boosting (XGBoost/LightGBM).
 - Model validation with ROC/AUC, precision/recall. -->
 
+## Outcome
+The end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present".
