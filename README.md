@@ -14,7 +14,7 @@ This project builds a classification model to predict whether auroras will be vi
 The goal is to provide a short-term forecast for observers, helping photographers, astronomers, and aurora enthusiasts plan observations.
 
 ## Data
-Tabular list of data sources, access methods, licensing, and limitations: (`aurora_data_pipeline.ipynb`)[https://github.com/Erdos-Projects/summer26-aurora-visibility-predictions/blob/main/aurora_data_pipeline.ipynb] 
+Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](https://github.com/Erdos-Projects/summer26-aurora-visibility-predictions/blob/main/aurora_data_pipeline.ipynb) 
 1. Actual aurora observations reported by citizens from 2014-2025, submitted to the Aurorasaurus citizen science project: available at https://zenodo.org/records/16783265
 2. Space-weather data: file fetched from: https://omniweb.gsfc.nasa.gov/form/dx1.html. Contains hourly measurements of Kp, solar wind speed, and Bz from Jan 1st, 2021 to Jan 1st, 2026.
 `data/raw/omni2_Qj2SZdRRin.lst.txt`
@@ -34,7 +34,7 @@ produces the processed dataset: `aurora_dataset_clean.csv`
 - Of the positive sightings 62.5% also report images taken (image not included in the dataset).
 - Aurora sightings went up in 2024 conciding with the solar cycle peaking. That also reflects on a larger number of negative sightings, consistent with higher overall reportings of any such events.
 - 31.1% of the positive sightings had local cloud cover > 80% according to open-meteo weather source at the location (latitude, longitude) for that date and time.
-- 32.3% of the positive sightings had sun above the horizon (sun elevation angle $> 0^{\degree}$) computed analytically at the observer's exact lat/lon and UTC datetime using the (astral)[https://astral.readthedocs.io/en/latest/package.html] library.
+- 32.3% of the positive sightings had sun above the horizon (sun elevation angle $> 0^{\degree}$) computed analytically at the observer's exact lat/lon and UTC datetime using the [astral](https://astral.readthedocs.io/en/latest/package.html) library.
 
   
 <!-- ## Next Steps
