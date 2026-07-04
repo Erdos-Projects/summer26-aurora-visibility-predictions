@@ -15,11 +15,10 @@ The goal is to provide a short-term forecast for observers, helping photographer
 
 ## Data
 Tabular list of data sources, access methods, licensing, and limitations: `data_inventory.csv`
-
-1. Space-weather data: file fetched from: https://omniweb.gsfc.nasa.gov/form/dx1.html. Contains hourly measurements of Kp, solar wind speed, and Bz from Jan 1st, 2021 to Jan 1st, 2026.
+1. Actual aurora observations reported by citizens from 2014-2025, submitted to the Aurorasaurus citizen science project: available at https://zenodo.org/records/16783265
+2. Space-weather data: file fetched from: https://omniweb.gsfc.nasa.gov/form/dx1.html. Contains hourly measurements of Kp, solar wind speed, and Bz from Jan 1st, 2021 to Jan 1st, 2026.
 `data/raw/omni2_Qj2SZdRRin.lst.txt`
-
-2. Local weather data: file fetched from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover. Contains hourly historical weather data of two cities Regina `data/raw/open-meteo-50.45N104.63W578m.csv`and Yellowknife `data/raw/open-meteo-62.46N114.32W192m.csv`.
+3. Local weather data: file fetched from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover, cached for ease of access.
 
 ## Data acquisition scripts
 Preprocess raw data from space and earth weather, to produce a cleaned and merged dataset ready for feature engineering.
