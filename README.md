@@ -2,11 +2,13 @@
 
 ## Overview
 
-This project builds a classification model to predict whether auroras will be visually observable from a specific geographic latitude given geophysical and local-sky conditions. Given the following key features for a particular time and location, predict a binary label: visually observable (yes/no).
+This project builds a classification model to predict whether auroras will be visually observable from a specific geographic latitude given geomagnetic and local-sky conditions. Given the following key features for a particular time and location, predict a binary label: visually observable (yes/no).
 
 - Kp index: global geomagnetic activity (0–9)
 - Solar wind speed: km/s
 - Bz IMF: Bz component of the interplanetary magnetic field (nT)
+- Solar elevation angle
+- Moon darkness index
 - Cloud percentage cover: local cloudiness (%)
 
 The goal is to provide a short-term forecast for observers, helping photographers, astronomers, and aurora enthusiasts plan observations.
