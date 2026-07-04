@@ -29,8 +29,12 @@ aurora_data_pipeline.ipynb
 ```
 produces the processed dataset: `aurora_dataset_clean.csv`
 
+## Observations from exploratory data analysis
+- Out of 22,280 observations 73.5% report positive sighting and 26.5% report no aurora seen.
+- Of the positive sightings 62.5% also report images taken (image not included in the dataset).
+- Aurora sightings went up in 2024 conciding with the solar cycle peaking. That also reflects on a larger number of negative sightings, consistent with higher overall reportings of any such events.
+- 31.1% of the positive sightings had local cloud cover > 80% according to open-meteo weather source at the location (latitude, longitude) for that date and time.
 <!-- ## Next Steps
-
 - Exploratory data analysis and feature selection.
 - Baseline classifiers: logistic regression, decision tree.
 - Stronger models: random forest, gradient boosting (XGBoost/LightGBM).
