@@ -32,7 +32,7 @@ produces the processed dataset: `aurora_dataset_clean.csv`
 
 ## Observations from exploratory data analysis
 - Out of 22,280 observations 73.5% report positive sighting and 26.5% report no aurora seen.
-  ![Yearly sighting by outcome](aurora_eda/outcome analysis.png)
+  ![Yearly sighting by outcome](outcome_analysis.png)
 - Of the positive sightings 62.5% also report images taken (image not included in the dataset).
 - Aurora sightings went up in 2024 conciding with the solar cycle peaking. That also reflects on a larger number of negative sightings, consistent with higher overall reportings of any such events.
 - 31.1% of the positive sightings had local cloud cover > 80% according to open-meteo weather source at the location latitude, longitude, date and time.
