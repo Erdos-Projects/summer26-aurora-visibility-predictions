@@ -28,7 +28,9 @@ Running this script:
 ```
 aurora_data_pipeline.ipynb
 ```
-produces the processed dataset: `aurora_dataset_clean.csv`
+produces the processed dataset: `aurora_dataset_clean.csv
+
+We use `see_aurora` as our target variable, which contains a boolean value (True or False) reported by the observer.
 
 ## Observations from exploratory data analysis
 - Out of 22,280 observations 73.5% report positive sighting and 26.5% report no aurora seen.
