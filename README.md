@@ -37,6 +37,8 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
   ![Yearly sighting by outcome](outcome_analysis.png)
 - Of the positive sightings 62.5% also report images taken (image not included in the dataset).
 - Aurora sightings went up in 2024 conciding with the solar cycle peaking. That also reflects on a larger number of negative sightings, consistent with higher overall reportings of any such events.
+- Aurora occurence is dependent on the magnetic latitude of the location.
+  ![mlat distribution](mlat_analysis.png)
 - 31.1% of the positive sightings had local cloud cover > 80% according to open-meteo weather source at the location latitude, longitude, date and time.
 - 32.3% of the positive sightings had sun above the horizon (sun elevation angle $> 0^{\degree}$) computed analytically at the observer's exact lat/lon and UTC datetime using the [astral](https://astral.readthedocs.io/en/latest/package.html) library.
 
