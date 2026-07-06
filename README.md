@@ -49,5 +49,3 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 - Stronger models: random forest, gradient boosting (XGBoost/LightGBM).
 - Model validation with ROC/AUC, precision/recall. -->
 
-## Outcome
-The end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present".
