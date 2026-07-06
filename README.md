@@ -49,3 +49,5 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 - Stronger models: random forest, gradient boosting (XGBoost/LightGBM).
 - Model validation with ROC/AUC, precision/recall. -->
 
+## Outcome
+The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. Therefore the end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present" which can be directly read off from the [NOAA forecast of the location and intensity of the aurora](https://www.spaceweather.gov/products/aurora-30-minute-forecast).
