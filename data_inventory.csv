@@ -1,3 +1,6 @@
 data sources, access methods, licensing, limitations
 NASA OMNIWeb Data, download from: https://omniweb.gsfc.nasa.gov/form/dx1.html, licensed for research use with proper attribution,
 open-meteo.com, download from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover, licensed for research use with proper attribution,
+Aurorasaurus citizen science data is a collection of auroral sightings submitted to the project via its website (aurorasaurus.org). It is a robust data set and particularly abundant during strong geomagnetic storms. This data is offered to the scientific community for research use through an open-access database in its raw and scientific formats for the 2014-2025 period, each of which is described in detail in the following technical report:
+
+MacDonald, E., Natsheh, F., Brandt Edson, L., & Heavner, M. (2026). Crowdsourced aurora observations during geomagnetic superstorms, download from: https://zenodo.org/records/16783265, Aurorasaurus is open science database.
