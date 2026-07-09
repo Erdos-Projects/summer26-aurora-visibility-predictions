@@ -17,7 +17,7 @@ The goal is to provide a short-term forecast for observers, helping photographer
 ## Data
 Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](https://github.com/Erdos-Projects/summer26-aurora-visibility-predictions/blob/main/aurora_data_pipeline.ipynb) 
 1. Actual aurora observations reported by citizens from 2014-2025, submitted to the Aurorasaurus citizen science project: available at https://zenodo.org/records/16783265
-2. Space-weather data: file fetched from: https://omniweb.gsfc.nasa.gov/form/dx1.html. Contains hourly measurements of Kp, solar wind speed, and Bz from Jan 1st, 2021 to Jan 1st, 2026.
+2. Space-weather data: file fetched from: https://omniweb.gsfc.nasa.gov/form/dx1.html. Contains hourly measurements of Kp, solar wind speed, and Bz from October 1st, 2021 to July 31st, 2025.
 `data/raw/omni2_Qj2SZdRRin.lst.txt`
 3. Local weather data: file fetched from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover, cached for ease of access.
 
