@@ -43,11 +43,9 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 - 32.3% of the positive sightings had sun above the horizon (sun elevation angle $> 0^{\degree}$) computed analytically at the observer's exact lat/lon and UTC datetime using the [astral](https://astral.readthedocs.io/en/latest/package.html) library.
 
   
- ## Next Steps
-- Exploratory data analysis and feature selection.
-- Baseline classifiers: logistic regression, decision tree.
-- Stronger models: random forest, gradient boosting (XGBoost/LightGBM).
-- Model validation with ROC/AUC, precision/recall. -->
+ ## Two apporoaches to modelling
+- Model 1: 2 stage XGBoost claissifer where the first model focuses on geomagnetic features with acitivity_id (quiet, active, very active). The predicted probability (p_thershold) acts as feature of the second XGBoost classifier with added weather features to make final predictions. 
+- Model 2: Leverage the mlat feature to create low, mid, high mlat bands and employ ExplainableBoostingClassifier. Train data split in timeseries with leave-one-region-out (in mlat) cross validation strartegy per fold. Added features in terms of auroral oval distance and also possible interaction terms between geomagnetic indices. mlat band specific positive/negative weight imbalance addressed by sample reweighting.
 
 ## Outcome
-The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. Therefore the end outcome of the model is more alligned with the prediction of whether a motivated observer sees aurora and not ``is aurora objectively present" which can be directly read off from the [NOAA forecast of the location and intensity of the aurora](https://www.spaceweather.gov/products/aurora-30-minute-forecast).
+The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. The second model is performing well in the high mlat regions where aurora sighting chances are higher even in quiet solar storms. 
