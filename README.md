@@ -48,4 +48,7 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 - Model 2: Leverage the mlat feature to create low, mid, high mlat bands and employ ExplainableBoostingClassifier. Train data split in timeseries with leave-one-region-out (in mlat) cross validation strartegy per fold. Added features in terms of auroral oval distance and also possible interaction terms between geomagnetic indices. mlat band specific positive/negative weight imbalance addressed by sample reweighting.
 
 ## Outcome
-The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. The second model is performing well in the high mlat regions where aurora sighting chances are higher even in quiet solar storms. 
+The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. The second model is performing well in the high mlat regions where aurora sighting chances are higher even in quiet solar storms.
+
+
+[Explore the Interactive Aurora Prediction Map Live](https://github.io)
