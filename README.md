@@ -27,7 +27,7 @@ Running this script:
 ```
 aurora_data_pipeline.ipynb
 ```
-produces the processed dataset: `aurora_dataset_clean.csv using the Aurorasaurus data (originally named: [web_observations_2014-08-01_to_2025-08-02_cleaned.csv](web_observations_2014-08-01_to_2025-08-02_cleaned.csv) renamed for convinience to [aurora_sighting.csv](aurora_sighting.csv)) and the open-meteo weather data in [aurora_weather.csv](aurora_weather.csv).
+produces the processed dataset: `aurora_dataset_clean.csv using the Aurorasaurus data (originally named: [data/raw/web_observations_2014-08-01_to_2025-08-02_cleaned.csv](web_observations_2014-08-01_to_2025-08-02_cleaned.csv) renamed for convinience to [aurora_sighting.csv](aurora_sighting.csv)) and the open-meteo weather data in [aurora_weather.csv](aurora_weather.csv).
 
 We use `see_aurora` as our target variable, which contains a boolean value (True or False) reported by the observer.
 
