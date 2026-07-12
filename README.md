@@ -15,7 +15,7 @@ The goal is to provide a short-term forecast for observers, helping photographer
 
 
 ## Data
-Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](https://github.com/Erdos-Projects/summer26-aurora-visibility-predictions/blob/main/aurora_data_pipeline.ipynb) 
+Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](aurora_data_pipeline.ipynb) 
 1. Actual aurora observations reported by citizens from 2014-2025, submitted to the Aurorasaurus citizen science project: available at https://zenodo.org/records/16783265
 2. Space-weather data: file fetched from: [https://omniweb.gsfc.nasa.gov/form/dx1.html](https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/). Contains 3-hourly measurements of Kp, solar wind speed, and Bz for the complete duration of the Aurorasaurus data collection period.
 3. Local weather data: file fetched from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover, cached for ease of access.
@@ -25,7 +25,7 @@ Preprocess raw data from space and earth weather, to produce a cleaned and merge
 
 Running this script:
 ```
-(aurora_data_pipeline.ipynb)[aurora_data_pipeline.ipynb]
+[aurora_data_pipeline.ipynb](aurora_data_pipeline.ipynb)
 ```
 produces the processed dataset: `aurora_dataset_clean.csv
 
