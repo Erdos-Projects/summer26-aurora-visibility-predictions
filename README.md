@@ -51,4 +51,4 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. The second model is performing well in the high mlat regions where aurora sighting chances are higher even in quiet solar storms.
 
 
-[Explore the Interactive Aurora Prediction Map Live](https://github.io)
+[Explore the Interactive Aurora Prediction Map Live](https://erdos-projects.github.io/summer26-aurora-visibility-predictions/plots/aurora_prediction_map.html)
