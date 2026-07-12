@@ -25,9 +25,9 @@ Preprocess raw data from space and earth weather, to produce a cleaned and merge
 
 Running this script:
 ```
-[aurora_data_pipeline.ipynb](aurora_data_pipeline.ipynb)
+aurora_data_pipeline.ipynb
 ```
-produces the processed dataset: `aurora_dataset_clean.csv
+produces the processed dataset: `aurora_dataset_clean.csv using the Aurorasaurus data (renamed for convinience to [aurora_sighting.csv](aurora_sighting.csv)) and the open-meteo weather data in [aurora_weather.csv](aurora_weather.csv).
 
 We use `see_aurora` as our target variable, which contains a boolean value (True or False) reported by the observer.
 
@@ -50,4 +50,4 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 The model predicts where observers will actually see aurora, accounting for observer distribution, cloud cover, darkness and the underlying geomagnetic indices. The second model is performing well in the high mlat regions where aurora sighting chances are higher even in quiet solar storms.
 
 
-[Explore the Interactive Aurora Prediction Map Live](https://erdos-projects.github.io/summer26-aurora-visibility-predictions/plots/aurora_prediction_map.html)
+[Explore the Interactive Aurora Prediction Map](https://erdos-projects.github.io/summer26-aurora-visibility-predictions/plots/aurora_prediction_map.html)
