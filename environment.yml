@@ -1,0 +1,31 @@
+name: aurora_project_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - pandas
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - requests
+  - notebook
+  - ipykernel
+  - matplotlib
+  - seaborn
+  - scipy
+  - plotly
+  - astral
+  - geopy
+  - pvlib
+  - cartopy
+  - missingno
+  - requests-cache
+  - pip
+  - pip:
+      - interpret
+      - retry-requests
+      - openmeteo-requests
+      - pyucalgarysrs
+      - aacgmv2
