@@ -43,7 +43,7 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 
   
  ## Two approaches to modelling
-- [Model 1](models/model_xgbclassifier.ipynb): 2 stage XGBoost classifier where the first model focuses on geomagnetic features with activity_id (quiet, active, very active). The predicted probability (p_thershold) acts as feature of the second XGBoost classifier with added weather features to make final predictions. 
+- [Model 1](models/model_XGBoost.ipynb): 2 stage XGBoost classifier where the first model focuses on geomagnetic features with activity_id (quiet, active, very active). The predicted probability (p_thershold) acts as feature of the second XGBoost classifier with added weather features to make final predictions. 
 - [Model 2](models/model_EBM.ipynb): Leverage the mlat feature to create low, mid, high mlat bands and employ ExplainableBoostingClassifier. Train data split in timeseries with leave-one-region-out (in mlat) cross validation strategy per fold. Added features in terms of auroral oval distance and also possible interaction terms between geomagnetic indices. mlat band specific positive/negative weight imbalance addressed by sample reweighting. The model's predicted probability of observing an aurora for a representative value of Kp = 7, assuming realistic values for the other geomagnetic indices and clear night-sky conditions, is shown [here](plots/aurora_globe_kp7.png).
 
 ## Outcome
