@@ -15,7 +15,7 @@ The goal is to provide a short-term forecast for observers, helping photographer
 
 
 ## Data
-Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](aurora_data_pipeline.ipynb) 
+Tabular list of data sources, access methods, licensing, and limitations: [`aurora_data_pipeline.ipynb`](data/aurora_data_pipeline.ipynb) 
 1. Actual aurora observations reported by citizens from 2014-2025, submitted to the Aurorasaurus citizen science project: available at https://zenodo.org/records/16783265
 2. Space-weather data: file fetched from: [https://omniweb.gsfc.nasa.gov/form/dx1.html](https://spdf.gsfc.nasa.gov/pub/data/omni/low_res_omni/). Contains 3-hourly measurements of Kp, solar wind speed, and Bz for the complete duration of the Aurorasaurus data collection period.
 3. Local weather data: file fetched from: https://open-meteo.com/en/docs/historical-forecast-api?hourly=cloud_cover, cached for ease of access.
@@ -43,7 +43,7 @@ We use `see_aurora` as our target variable, which contains a boolean value (True
 
   
  ## Two approaches to modelling
-- [Model 1](models/modeling_xgbclassifier.ipynb): 2 stage XGBoost classifier where the first model focuses on geomagnetic features with activity_id (quiet, active, very active). The predicted probability (p_thershold) acts as feature of the second XGBoost classifier with added weather features to make final predictions. 
+- [Model 1](models/model_xgbclassifier.ipynb): 2 stage XGBoost classifier where the first model focuses on geomagnetic features with activity_id (quiet, active, very active). The predicted probability (p_thershold) acts as feature of the second XGBoost classifier with added weather features to make final predictions. 
 - [Model 2](models/model_EBM.ipynb): Leverage the mlat feature to create low, mid, high mlat bands and employ ExplainableBoostingClassifier. Train data split in timeseries with leave-one-region-out (in mlat) cross validation strategy per fold. Added features in terms of auroral oval distance and also possible interaction terms between geomagnetic indices. mlat band specific positive/negative weight imbalance addressed by sample reweighting. The model's predicted probability of observing an aurora for a representative value of Kp = 7, assuming realistic values for the other geomagnetic indices and clear night-sky conditions, is shown [here](plots/aurora_globe_kp7.png).
 
 ## Outcome
